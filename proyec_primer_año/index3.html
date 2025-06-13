@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🌹 Para Ti, Mi Amor 🌹</title>
+    <link rel="stylesheet" href="estilo3.css" />
+</head>
+
+<body>
+    <audio autoplay loop>
+        <source src="music.mp3" type="audio/mpeg" />
+    </audio>
+
+    <div class="gradient-bg"></div>
+
+    <div class="container">
+        <h1 class="fade-in-title">🌟 Te Amo con Todo Mi Corazón 🌟</h1>
+        <button class="magic-button" onclick="mostrarCarta()">💌 Ver Carta de Amor</button>
+
+        <div id="carta" class="carta-oculta">
+            <p class="mensaje typewriter">
+                Mi amor🥰gracias por formar parte de mi vida❤️💕
+                conocerte fue lo mejor que me pudo pasar💕❣️
+                eres una señorita admirable, tierna🥰❤️
+                se que en tus momentos malos no estoy 
+                ahí a tu lado❤️❣️para darte un consuelo 
+                o algo pero eso no impide que no esté en tus 
+                momentos malos aunque estando lejos de tí🥰
+                siempre me preocupo de ti aunque solo te digo por escrito🥰❣️
+                no importa si esté lejos de ti yo siempre estaré 
+                en tus momentos malos y buenos mi amor💞
+                ese amor que siento por tí es muy grande❣️
+                te amo demasiado mi amor ❣️💞🥰✨
+            </p>
+        </div>
+
+        <!-- Formulario romántico justo debajo de la carta -->
+        <div class="formulario-romantico">
+            <h2>💬 ¿Quieres escribirme algo tú también?</h2>
+            <form id="formularioRomantico" action="https://formsubmit.co/reydihuallparttupa8@gmail.com" method="POST">
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label">Mensaje</label><br />
+                    <textarea class="form-control" id="mensaje" name="message" rows="4"
+                        placeholder="Escríbenos algo bonito..." required></textarea>
+                </div>
+                <input type="hidden" name="_captcha" value="false" />
+                <button type="submit" class="magic-button" style="margin-top: 20px;">📩 Enviar</button>
+            </form>
+
+            <!-- Mensaje de éxito -->
+            <div id="mensaje-exito"
+                style="display: none; margin-top: 20px; color: #00ff7f; font-weight: bold; font-size: 1.2em;">
+                ✅ ¡Tu mensaje fue enviado con amor!
+            </div>
+        </div>
+
+
+    </div>
+
+    <canvas id="particulas"></canvas>
+    <script src="script.js"></script>
+</body>
+
+</html>
